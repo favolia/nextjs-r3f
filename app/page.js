@@ -24,7 +24,7 @@ const Scene = dynamic(() => import("@/components/Scene"), {
 
 export default function Home() {
   return (
-    <main className="relative bg-black/95 h-screen flex flex-col justify-center items-center">
+    <main className="relative bg-white h-screen flex flex-col justify-center items-center">
       <Scene />
     </main>
   );
