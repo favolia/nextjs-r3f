@@ -15,10 +15,10 @@ const Scene = () => {
             {/* <ambientLight intensity={0.5} /> */}
             {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} /> */}
             {/* <pointLight position={[-10, -10, -10]} /> */}
-            <directionalLight position={[-5, -5, -5]} intensity={4} />
+            <directionalLight intensity={4} />
             <Suspense fallback={<Loader />}>
                 <ScrollControls damping={0.2} pages={2} >
-                    <OrbitControls autoRotate minPolarAngle={Math.PI * 2} enablePan={false} enableRotate={false} enableZoom={false} />
+                    <OrbitControls autoRotate enablePan={false} enableRotate={true} enableZoom={true} />
                     <ambientLight intensity={2} />
                     <directionalLight position={[2, 1, 1]} />
                     <Model />
