@@ -10,7 +10,7 @@ export default function Model() {
     const { nodes, materials, animations, scene } = useGLTF('/3d/frank.glb')
     return (
         <group
-            ref={group}>
+            ref={group} >
             <primitive object={scene} />
         </group>
     )
